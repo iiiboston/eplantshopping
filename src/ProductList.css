@@ -283,17 +283,32 @@ body {
       }
   }
 
-.cart-count {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  padding: 2px 8px;
-  font-size: 14px;
+.cart-icon {
+    position: relative;
+    display: inline-block;
 }
 
-.cart-icon {
-  position: relative;
+.cart {
+    color: white;
+    display: flex;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: 50%;        /* Center vertically */
+    left: 50%;       /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 14px;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;      /* Ensure it appears above the cart icon */
 }

@@ -295,7 +295,9 @@ const handlePlantsClick = (e) => {
                                       id="mainIconPathAttribute">
                                 </path>
                             </svg>
-                            {cartQuantity > 0 && <span className="cart-count">{cartQuantity}</span>}
+                            {cartQuantity > 0 && (
+                                <span className="cart-count">{cartQuantity}</span>
+                            )}
                         </h1>
                     </a>
                 </div>
